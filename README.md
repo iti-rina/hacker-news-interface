@@ -2,11 +2,11 @@
 
 ### Main page
 
-![main-page](https://github.com/iti-rina/hacker-news/raw/main/docs/img/main-page.png)
+![main-page](./docs/img/main-page.png?raw=true)
 
 ### Single story page
 
-![story-page](https://github.com/iti-rina/hacker-news/raw/main/docs/img/single-story-page.png)
+![story-page](./docs/img/single-story-page.png?raw=true)
 
 ## Stack
 
@@ -29,7 +29,7 @@ This project can be built with Docker.
 You can build the project with Node.js. Node version of the project: 16.17.1.
 
 Install dependencies:
-`yarn add`
+`yarn install`
 
 ### Available Scripts
 
