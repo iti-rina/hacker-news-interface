@@ -3,7 +3,7 @@ import { fetchComments } from "./fetchComments";
 import Comment from "./Comment";
 import "./style.css";
 
-export default function Comments({ commentsIds, storyId }) {
+export default function Comments({ commentsIds }) {
   const [comments, setComments] = useState([]);
 
   useEffect(() => {

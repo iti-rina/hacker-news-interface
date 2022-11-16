@@ -41,7 +41,7 @@ const SingleStoryPage = () => {
       <div className="comments-container comments" >
         {story?.kids ? <p className="comments__counter">Comments ({story?.descendants})</p> : null}
 
-        <Comments commentsIds={story?.kids} storyId={storyId} />
+        <Comments commentsIds={story?.kids} />
 
         <button onClick={() => fetchComments(story?.kids)} className="comments__reload-btn">Reload Comments</button>
       </div>

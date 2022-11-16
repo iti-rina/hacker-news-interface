@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
 import { fetchPosts, getStatus} from "../features/news/newsSlice";
 import LoadingSpinner from "./LoadingSpinner/LoadingSpinner";
@@ -8,6 +8,8 @@ import { GoSync } from "react-icons/go";
 export default function Header() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
+
+  const url = useLocation();
 
   const status  = useSelector(getStatus);
 
@@ -25,6 +27,7 @@ export default function Header() {
           <h1>Hacker News</h1>
         </div>
         {spinner}
+        {url.pathname !== "/" ? <button onClick={() => navigate("/")} className="back-to-main__btn">Back to main page</button> : null}
       </div>
     </header>
   );

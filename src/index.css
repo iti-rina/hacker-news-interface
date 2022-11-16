@@ -88,6 +88,17 @@ main {
   cursor: pointer;
 }
 
+.back-to-main__btn {
+  background-color: #2DBF80;
+  color: #fff;
+  margin-left: auto;
+  font-size: 16px;
+  font-weight: 700;
+  min-height: 45px;
+  padding: 0 15px;
+  border-radius: 10px;
+}
+
 h1 {
   font-weight: 700;
 }

@@ -1,5 +1,7 @@
 export async function fetchComments(ids) {
-  return await Promise.all(ids.map(id => fetchComment(id)));
+  if (ids !== null && ids !== undefined) {
+    return await Promise.all(ids.map(id => fetchComment(id)));
+  }
 }
 
 export async function fetchComment(commentId) {
